@@ -1,0 +1,3 @@
+opencv-python==4.10.0
+vidgear==0.3.3
+yt-dlp==2025.01.01

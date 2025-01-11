@@ -15,7 +15,7 @@ net = cv2.dnn.readNetFromDarknet(config_path, weights_path)
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
 
-youtube_url = "https://www.youtube.com/watch?v=Aib8nj_i16w"
+youtube_url = "https://www.youtube.com/watch?v=7tFZCOgC_Ug"
 
 video_handler = VideoHandler(youtube_url, net, output_layers, labels)
 
@@ -42,7 +42,7 @@ while not gameOver:
 
     if cv2.waitKey(1) == ord(" "):
         if gameStart == False:
-            gameStart = True;
+            gameStart = True
         if dino.isJumping == False:
             dino.isJumping = True
             dino.move_y = -1 * dino.jumpSpeed
